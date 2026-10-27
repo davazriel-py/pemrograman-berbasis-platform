@@ -7,7 +7,7 @@ const WEDDING = {
   dateISO: '2027-01-23T08:00:00+07:00', // kosong = countdown belum aktif
   coverPhoto: 'img/cover.svg',
   musicSrc: '',       // contoh: 'audio/lagu.mp3'
-  rsvpEndpoint: '',   // URL Formspree / Firebase Function / Apps Script. Kosong = belum terhubung
+  rsvpEndpoint: 'https://formspree.io/f/mkjjjeav',   // URL Formspree / Firebase Function / Apps Script. Kosong = belum terhubung
   maxGuests: 5,
   story: [
     { title: 'Pertama Bertemu', date: '2021', text: 'Kami bertemu di sebuah acara komunitas kampus. Obrolan singkat tentang kopi dan musik ternyata berlanjut sampai larut malam.', photo: 'img/story1.svg' },
