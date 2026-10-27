@@ -23,7 +23,7 @@ const WEDDING = {
       address: 'Jl. Ketintang Sel. No.95, Karah, Kec. Jambangan', city: 'Surabaya, Jawa Timur', note: 'Berada di dekat sungai.', lat: -7.3159186, lng: 112.7205582, mapsUrl: 'https://maps.app.goo.gl/yxR24jqXmNV31HKW8' }
   ],
   gallery: [
-    { src: 'img/gallery1.svg', ratio: '3 / 4' }, { src: 'img/gallery2.svg', ratio: '1 / 1' }, { src: 'img/gallery3.svg', ratio: '4 / 5' },
-    { src: 'img/gallery4.svg', ratio: '4 / 3' }, { src: 'img/gallery5.svg', ratio: '3 / 4' }, { src: 'img/gallery6.svg', ratio: '1 / 1' }
+    { src: 'img/gallery1.jpeg', ratio: '3 / 4' }, { src: 'img/gallery2.jpeg', ratio: '1 / 1' }, { src: 'img/gallery3.jpeg', ratio: '4 / 5' },
+    { src: 'img/gallery4.jpeg', ratio: '4 / 3' }, { src: 'img/gallery5.jpeg', ratio: '3 / 4' }, { src: 'img/gallery6.jpeg', ratio: '1 / 1' }
   ]
 };
