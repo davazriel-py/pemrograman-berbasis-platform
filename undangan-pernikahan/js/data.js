@@ -10,10 +10,10 @@ const WEDDING = {
   rsvpEndpoint: 'https://formspree.io/f/mkjjjeav',   // URL Formspree / Firebase Function / Apps Script. Kosong = belum terhubung
   maxGuests: 5,
   story: [
-    { title: 'Pertama Bertemu', date: '2021', text: 'Kami bertemu di sebuah acara komunitas kampus. Obrolan singkat tentang kopi dan musik ternyata berlanjut sampai larut malam.', photo: 'img/story1.svg' },
-    { title: 'Mulai Menjalin Hubungan', date: '2023', text: 'Setelah dua tahun berteman baik, kami sadar bahwa tempat paling nyaman untuk pulang adalah satu sama lain.', photo: 'img/story2.svg' },
-    { title: 'Momen Berkesan', date: '2025', text: 'Di tepi pantai saat matahari terbenam, Raka melamar Aira dengan restu kedua keluarga.', photo: 'img/story3.svg' },
-    { title: 'Menuju Pernikahan', date: '2027', text: 'Dengan doa dan restu, kami siap memulai perjalanan baru dan ingin Anda hadir berbagi kebahagiaan.', photo: 'img/story4.svg' }
+    { title: 'Pertama Bertemu', date: '2021', text: 'Kami bertemu di sebuah acara komunitas kampus. Obrolan singkat tentang kopi dan musik ternyata berlanjut sampai larut malam.', photo: 'img/story1.jpeg' },
+    { title: 'Mulai Menjalin Hubungan', date: '2023', text: 'Setelah dua tahun berteman baik, kami sadar bahwa tempat paling nyaman untuk pulang adalah satu sama lain.', photo: 'img/story2.jpeg' },
+    { title: 'Momen Berkesan', date: '2025', text: 'Apa yang bermula dari sebuah kebetulan, kini menjadi takdir yang ingin kami jalani bersama hingga selamanya.', photo: 'img/story3.jpeg' },
+    { title: 'Menuju Pernikahan', date: '2027', text: 'Dengan doa dan restu, kami siap memulai perjalanan baru dan ingin Anda hadir berbagi kebahagiaan.', photo: 'img/story4.jpeg' }
   ],
   // Alamat contoh memakai lokasi nyata di Surabaya agar peta tampil. Ganti dengan lokasi acara Anda.
   events: [
