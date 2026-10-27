@@ -17,8 +17,8 @@ const WEDDING = {
   ],
   // Alamat contoh memakai lokasi nyata di Surabaya agar peta tampil. Ganti dengan lokasi acara Anda.
   events: [
-    { id: 'akad', type: 'Akad Nikah', icon: '◈', date: 'Sabtu, 23 Januari 2027', time: '08.00 - 10.00 WIB', venue: 'Balai Pemuda Surabaya',
-      address: 'Jl. Gubernur Suryo No.15, Genteng', city: 'Surabaya, Jawa Timur', note: 'Dekat Alun-Alun Contong. Parkir tersedia di sisi barat gedung.', lat: null, lng: null, mapsUrl: '' },
+    { id: 'akad', type: 'Akad Nikah', icon: '◈', date: 'Sabtu, 23 Januari 2027', time: '08.00 - 10.00 WIB', venue: 'Pojokopi',
+      address: 'Wisma Sejahtera Surabaya, Jl. Ketintang Sel. No.77, Karah, Kec. Jambangan', city: 'Surabaya, Jawa Timur', note: 'Dekat Masjid Baitussalam', lat: -7.316671, lng: 112.7214156, mapsUrl: 'https://maps.app.goo.gl/NnjKF5eFx9Zmv4y99' },
     { id: 'resepsi', type: 'Resepsi', icon: '✦', date: 'Sabtu, 23 Januari 2027', time: '11.00 - 14.00 WIB', venue: 'Hotel Majapahit Surabaya',
       address: 'Jl. Tunjungan No.65, Genteng', city: 'Surabaya, Jawa Timur', note: 'Berada di kawasan Tunjungan, mudah dijangkau kendaraan online.', lat: null, lng: null, mapsUrl: '' }
   ],
