@@ -6,7 +6,7 @@ const WEDDING = {
   dateLabel: 'Sabtu, 23 Januari 2027',
   dateISO: '2027-01-23T08:00:00+07:00', // kosong = countdown belum aktif
   coverPhoto: 'img/cover.svg',
-  musicSrc: '',       // contoh: 'audio/lagu.mp3'
+  musicSrc: 'untilifoundyou.mp3',       // contoh: 'audio/lagu.mp3'
   rsvpEndpoint: 'https://formspree.io/f/mkjjjeav',   // URL Formspree / Firebase Function / Apps Script. Kosong = belum terhubung
   maxGuests: 5,
   story: [
