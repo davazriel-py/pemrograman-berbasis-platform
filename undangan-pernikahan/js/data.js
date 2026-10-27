@@ -1,11 +1,11 @@
 // SEMUA data undangan ada di sini. Saat ini berisi DATA CONTOH untuk preview; ganti dengan data asli.
 // Foto: isi "src" (mis. "img/foto1.jpg"). Kosong = tampil placeholder.
 const WEDDING = {
-  groom: { full: 'Raka Pratama, S.Kom.', nick: 'Raka', parents: 'Bapak Hendra Pratama & Ibu Sari Wulandari', photo: 'img/groom.svg' },
-  bride: { full: 'Aira Maharani, S.Ds.', nick: 'Aira', parents: 'Bapak Wahyu Santoso & Ibu Dewi Lestari', photo: 'img/bride.svg' },
+  groom: { full: 'Loid Forger', nick: 'Loid', parents: 'Bapak Riski Anugrah & Ibu Ratna Sarumpaet', photo: 'img/groom.jpeg' },
+  bride: { full: 'Yor Briar', nick: 'Yor', parents: 'Bapak Ibrahim & Ibu Galang Satria', photo: 'img/bride.jpeg' },
   dateLabel: 'Sabtu, 23 Januari 2027',
   dateISO: '2027-01-23T08:00:00+07:00', // kosong = countdown belum aktif
-  coverPhoto: 'img/cover.svg',
+  coverPhoto: 'img/cover.jpeg',
   musicSrc: 'audio/untilifoundyou.mp3',       // contoh: 'audio/lagu.mp3'
   rsvpEndpoint: 'https://formspree.io/f/mkjjjeav',   // URL Formspree / Firebase Function / Apps Script. Kosong = belum terhubung
   maxGuests: 5,
