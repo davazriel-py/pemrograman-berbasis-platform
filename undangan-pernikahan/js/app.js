@@ -47,8 +47,8 @@
       : '<div class="ph"><span>PETA BELUM TERSEDIA<br>Isi alamat atau koordinat di js/data.js</span></div>'}</div>
     <h3>${esc(e.venue)}</h3><p>${esc(e.address)}<br>${esc(e.city)}</p>${e.note ? `<p class="small">${esc(e.note)}</p>` : ''}
     <div class="d-flex flex-wrap gap-2 mt-3">${l
-      ? `<a class="btn btn-retro sm" target="_blank" rel="noopener noreferrer" href="${l.open}">BUKA GOOGLE MAPS</a><a class="btn btn-retro sm ghost" target="_blank" rel="noopener noreferrer" href="${l.dir}">PETUNJUK ARAH</a>`
-      : '<span class="btn btn-retro sm off" aria-disabled="true">BUKA GOOGLE MAPS</span><span class="btn btn-retro sm off" aria-disabled="true">PETUNJUK ARAH</span>'}</div></div></div>`; }).join('');
+  ? `<a class="btn btn-retro sm" href="${l.open}" target="_blank">BUKA DI GOOGLE MAPS</a><a class="btn btn-retro sm" href="${l.dir}" target="_blank">PETUNJUK ARAH</a>`
+  : '<span class="small">Peta belum tersedia</span>'}</div></div></div>`; }).join('');
 
   $('#collage').innerHTML = W.gallery.map((g, i) => `<div class="rv">${photo(g.src, 'Foto ' + (i + 1), g.ratio, 'hov', i)}</div>`).join('');
   const lb = new bootstrap.Modal('#lb');
