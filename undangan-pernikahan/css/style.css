@@ -66,3 +66,52 @@ h1,h2,h3{font-family:var(--serif);line-height:1.05}
 .foot{text-align:center;padding:80px 22px 40px;background:var(--brown);color:var(--cream)}.foot .kicker{color:var(--gold)}.foot-t{max-width:520px;margin:0 auto 1.6rem}
 .foot .names em{color:var(--gold);margin-left:0}.foot .date-line{border-color:var(--gold);margin:0}.foot .geo{border-color:var(--gold);box-shadow:8px 8px 0 var(--orange);width:30px;height:30px;margin:2.4rem auto 2rem}
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}.rv{opacity:1;transform:none}}
+
+/* ===== EXTRAS: animasi & perintilan ===== */
+#progress{position:fixed;top:0;left:0;height:4px;width:0;z-index:80;background:linear-gradient(90deg,var(--orange),var(--gold))}
+.hero .row{position:relative;z-index:1}
+@keyframes rise{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:none}}
+.hero .col-md-7>*{opacity:0;animation:rise .9s cubic-bezier(.2,.7,.2,1) forwards}
+.hero .col-md-7>:nth-child(1){animation-delay:.1s}.hero .col-md-7>:nth-child(2){animation-delay:.2s}.hero .col-md-7>:nth-child(3){animation-delay:.35s}
+.hero .col-md-7>:nth-child(4){animation-delay:.5s}.hero .col-md-7>:nth-child(n+5){animation-delay:.65s}
+.guest{font-size:.95rem;letter-spacing:.12em;border-left:4px solid var(--orange);padding-left:.8rem;margin-bottom:1.4rem}
+.guest b{display:block;font:800 1.5rem var(--serif);letter-spacing:0}
+.hero-wrap{position:relative;max-width:340px;margin:0 auto}
+@keyframes sway{0%,100%{transform:rotate(2.5deg) translateY(0)}50%{transform:rotate(1deg) translateY(-10px)}}
+.photo.tilt{animation:sway 7s ease-in-out infinite}
+.badge-spin{position:absolute;right:-16px;bottom:-24px;width:116px;height:116px;z-index:3}
+.badge-spin svg{width:100%;height:100%;animation:spin 18s linear infinite}
+.badge-star{position:absolute;inset:0;display:grid;place-items:center;color:var(--orange);font-size:1.6rem}
+@keyframes spin{to{transform:rotate(360deg)}}
+.shape{position:absolute;z-index:0;pointer-events:none}
+.s1{top:14%;left:1%;width:54px;height:54px;border:3px solid var(--orange);transform:rotate(45deg);animation:float 9s ease-in-out infinite}
+.s2{bottom:9%;left:46%;width:26px;height:26px;border-radius:50%;background:var(--gold);animation:float 7s ease-in-out infinite reverse}
+.s3{top:16%;right:2%;width:70px;height:70px;background:repeating-linear-gradient(-45deg,var(--teal) 0 5px,transparent 5px 10px);animation:float 11s ease-in-out infinite}
+@keyframes float{50%{translate:0 -18px}}
+/* ticker */
+.ticker{overflow:hidden;background:var(--brown);color:var(--gold);border-block:3px double var(--gold);padding:.55rem 0;white-space:nowrap;font:700 .8rem var(--sans);letter-spacing:.35em}
+.ticker-in{display:inline-flex;animation:marq 40s linear infinite}.ticker-in span{padding-right:2rem}
+@keyframes marq{to{transform:translateX(-50%)}}
+/* tombol berkilau */
+.btn-retro{position:relative;overflow:hidden}
+.btn-retro::after{content:"";position:absolute;top:0;left:-80%;width:50%;height:100%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.45),transparent);transform:skewX(-20deg)}
+.btn-retro:hover::after{left:130%;transition:left .7s}
+/* nomor section & ornamen kartu */
+#content{counter-reset:sec}
+.sec .title::before{counter-increment:sec;content:"N° " counter(sec,decimal-leading-zero);display:block;font:700 .75rem var(--sans);letter-spacing:.3em;color:var(--orange);margin-bottom:.6rem}
+.teal .title::before{color:var(--gold)}
+.card-retro::before{content:"+";position:absolute;top:5px;left:9px;font:700 .85rem var(--sans);color:var(--orange);opacity:.7}
+.card-retro:hover{transform:translate(-2px,-2px);box-shadow:8px 8px 0 var(--orange);transition:.25s}.teal .card-retro:hover{box-shadow:8px 8px 0 var(--gold)}
+/* timeline, mempelai, countdown */
+@keyframes pulse{50%{box-shadow:0 0 0 7px rgba(227,179,75,.35)}}
+.story li::before{animation:pulse 2.4s ease-in-out infinite}
+.couple.a.rv{transform:translateX(-40px)}.couple.b.rv{transform:translateX(40px)}.couple.a.rv.on,.couple.b.rv.on{transform:none}
+.geo{animation:spin 14s linear infinite}
+@keyframes pop{0%{transform:translateY(-8px) scale(1.15);color:var(--orange)}100%{transform:none}}
+.cd b.pop{animation:pop .5s}
+/* confetti & back-to-top */
+#confetti{position:fixed;inset:0;pointer-events:none;z-index:90;overflow:hidden}
+#confetti i{position:absolute;top:-20px;width:10px;height:10px;transform:rotate(45deg);animation:fall var(--d) ease-in forwards}
+@keyframes fall{to{transform:translate(var(--x),105vh) rotate(540deg);opacity:.8}}
+#toTop{position:fixed;right:16px;bottom:16px;z-index:70;opacity:0;visibility:hidden;transition:.3s;box-shadow:3px 3px 0 var(--orange)}#toTop.show{opacity:1;visibility:visible}
+@media(max-width:767px){.badge-spin{right:-6px;width:96px;height:96px}.s3{display:none}}
